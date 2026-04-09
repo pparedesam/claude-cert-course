@@ -23,13 +23,17 @@ def get_client() -> anthropic.Anthropic:
 
 
 # Modelos disponibles
+CLAUDE_HAIKU  = "claude-haiku-4-5-20251001"
+CLAUDE_SONNET = "claude-sonnet-4-5-20250929"
+CLAUDE_OPUS   = "claude-opus-4-5-20251101"
+
 MODELS = {
-    "opus":   "claude-opus-4-5",
-    "sonnet": "claude-sonnet-4-5",
-    "haiku":  "claude-haiku-3-5",
+    "haiku":  CLAUDE_HAIKU,
+    "sonnet": CLAUDE_SONNET,
+    "opus":   CLAUDE_OPUS,
 }
 
-DEFAULT_MODEL = MODELS["sonnet"]
+DEFAULT_MODEL = CLAUDE_SONNET
 
 
 def simple_chat(prompt: str, model: str = DEFAULT_MODEL, max_tokens: int = 1024) -> str:
