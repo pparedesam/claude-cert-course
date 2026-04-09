@@ -59,13 +59,25 @@ Obtener API key en: https://console.anthropic.com/
 
 ---
 
+## Chat interactivo (terminal)
+
+Si el chat interactivo en notebooks se queda colgado, puedes usar el script en terminal:
+
+```bash
+python 01_accessing_claude_api/chat_demo.py
+```
+
+El script usa la misma `.env` y dependencias del curso.
+
+---
+
 ## Modelos utilizados
 
 | Modelo | Uso recomendado |
 |--------|----------------|
-| `claude-opus-4-5` | Tareas complejas, razonamiento avanzado |
-| `claude-sonnet-4-5` | Uso general en el curso (balance costo/rendimiento) |
-| `claude-haiku-3-5` | Tareas rapidas y de bajo costo |
+| `claude-opus-4-5-20251101` | Tareas complejas, razonamiento avanzado |
+| `claude-sonnet-4-5-20250929` | Uso general en el curso (balance costo/rendimiento) |
+| `claude-haiku-4-5-20251001` | Tareas rapidas y de bajo costo |
 
 ---
 
